@@ -1,0 +1,41 @@
+.firefly {
+     display: flex;
+     position: absolute;
+}
+
+.firefly span {
+     position: relative;
+     width: 10px;
+     height: 10px;
+     background: #ee8936;
+     margin: 0 4px;
+     border-radius: 50%;
+     box-shadow: 0 0 0 10px #e7be0644,
+          0 0 50px #f1db0d,
+          0 0 75px #f39223;
+     animation: animate 50s linear infinite;
+     animation-duration: calc(200s / var(--i));
+}
+
+
+@keyframes animate {
+     0% {
+          transform: translate(50vh, 25vh) scale(0);
+     }
+
+     25% {
+          transform: translate(10vh, 12vh) scale(1);
+     }
+
+     50% {
+          transform: translate(2vh, 3vh) scale(0);
+     }
+
+     75% {
+          transform: translate(-10vh, -12vh) scale(1);
+     }
+
+     100% {
+          transform: translateX(-50vh) translateY(12vh) scale(1);
+     }
+}

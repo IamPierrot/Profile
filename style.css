@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2? family= Russo+One & display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+
+body {
+     height: 100vh;
+     /* background-image: linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 122)); */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Poppins";
+     color: white;
+     background: url('vjp.gif') no-repeat center center fixed;
+     background-size: cover;
+}
+
+@keyframes animate {
+     0% {
+          transform: translateY(50vh) scale(0);
+     }
+
+     100% {
+          transform: translateY(-50vh) scale(1);
+     }
+}
+
+.card {
+     background: rgb(39, 38, 39, 0.6);
+     width: 25rem;
+     height: 33rem;
+     border-radius: 10px;
+     box-shadow: 0 0 150px #5056ec;
+     text-align: center;
+     /* border: 4px solid rgb(92, 124, 231); */
+     overflow: hidden;
+     position: relative;
+}
+
+@keyframes card {
+     0% {
+          transform: translateY(0)
+     }
+
+     50% {
+          transform: translateY(-10px)
+     }
+
+     100% {
+          transform: translateY(0)
+     }
+}
+
+.card {
+     animation: card 3s linear infinite
+}
+
+img {
+     object-fit: cover;
+     width: 113px;
+     height: 113px;
+     object-position: center;
+}
+
+.card__img {
+     width: 150px;
+     height: 150px;
+     border: 4px solid #000;
+     border-radius: 100%;
+     overflow: hidden;
+     margin: 0 auto;
+     transform: translateY(25px);
+     transition: 0.5s;
+     object-fit: cover;
+     object-position: center;
+     margin-top: 2rem;
+}
+
+.card h2 {
+     margin-top: 35px;
+}
+
+.card p {
+     color: #f38609;
+     margin: 20px 0;
+     font-weight: bold;
+}
+
+.card__icon {
+     margin: 25px 0;
+}
+
+.card__icon a {
+     color: white;
+     margin: 25px 20px;
+     font-weight: bold;
+     font-size: 50px;
+     text-decoration: none;
+}
+
+#nhuan {
+     font-weight: bold;
+     font-size: larger;
+     margin-top: 5rem;
+     color: crimson;
+}
+
+.fa-facebook {
+     color: #4267B2;
+}
+
+.fa-github {
+     color: black;
+}
+
+.fa-instagram {
+     color: whitesmoke;
+}
+
+
+.fa-brands:hover {
+     transform: translateY(-10px);
+     transition: 0.5s;
+}
