@@ -13,7 +13,7 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-     font-family: "Poppins";
+     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
      color: white;
      background: url('vjp.gif') no-repeat center center fixed;
      background-size: cover;
